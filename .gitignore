@@ -4,7 +4,6 @@ Segmentation/archive/
 Segmentation/archive1/
 
 Classification/Decoder_methods.py
-Classification/SwinHafNet_model_8535.pth
 Classification/__pycache__/
 Classification/archive/
 Classification/data/
