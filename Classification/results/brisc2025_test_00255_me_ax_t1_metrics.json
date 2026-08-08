@@ -1,0 +1,92 @@
+{
+  "image": "archive/brisc2025/classification_test/meningioma/images/brisc2025_test_00255_me_ax_t1.jpg",
+  "prediction": "meningioma",
+  "confidence": 0.96654,
+  "all_probs": {
+    "glioma": 0.02151,
+    "meningioma": 0.96654,
+    "no_tumor": 0.00273,
+    "pituitary": 0.00923
+  },
+  "lime": {
+    "stability_iou": 0.6525238110248394,
+    "num_samples": 512,
+    "num_features": 8,
+    "stability_runs": 3
+  },
+  "shap": {
+    "channel_importance": [
+      {
+        "class": "glioma",
+        "ch0_frac": 0.9385157651982808,
+        "ch1_frac": 0.06148423477506677,
+        "ch0_mean_abs": 0.0017544805546165663,
+        "ch1_mean_abs": 0.00011493988521923651
+      },
+      {
+        "class": "meningioma",
+        "ch0_frac": 0.916329918667762,
+        "ch1_frac": 0.08367008129683573,
+        "ch0_mean_abs": 0.0012896316675278213,
+        "ch1_mean_abs": 0.00011775626252813615
+      },
+      {
+        "class": "no_tumor",
+        "ch0_frac": 0.9220831032140698,
+        "ch1_frac": 0.07791689676531963,
+        "ch0_mean_abs": 0.0022290763042469987,
+        "ch1_mean_abs": 0.0001883590618618153
+      },
+      {
+        "class": "pituitary",
+        "ch0_frac": 0.9469303330701613,
+        "ch1_frac": 0.05306966690391975,
+        "ch0_mean_abs": 0.001820307259449194,
+        "ch1_mean_abs": 0.0001020171141931284
+      }
+    ],
+    "background_samples": 16
+  },
+  "faithfulness": {
+    "orig_confidence": 0.96654,
+    "top_k_fracs": [
+      0.05,
+      0.1,
+      0.2
+    ],
+    "sufficiency_shap": [
+      0.0001,
+      0.0059,
+      0.1336
+    ],
+    "comprehensiveness_shap": [
+      0.9632,
+      0.9569,
+      0.9531
+    ],
+    "sufficiency_lime": [
+      0.9942,
+      0.9998,
+      0.9998
+    ],
+    "comprehensiveness_lime": [
+      -0.026,
+      -0.0176,
+      0.1373
+    ],
+    "sufficiency_gradcam": [
+      0.9523,
+      0.8698,
+      0.7627
+    ],
+    "comprehensiveness_gradcam": [
+      -0.0279,
+      0.341,
+      0.8268
+    ],
+    "shap_lime_ssim": 0.3000635841938266,
+    "shap_gradcam_spearman": 0.20676936116928024,
+    "lime_gradcam_spearman": 0.19304403829144853,
+    "shap_lime_spearman": 0.1156450835234338
+  }
+}
